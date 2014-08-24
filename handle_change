@@ -1,0 +1,5 @@
+#!/bin/bash
+if `/usr/bin/javac -d build ./src/com/geofffilippi/javaReference/JavaReference.java` ; then
+  /usr/bin/javadoc -sourcepath ./src com.geofffilippi.javaReference -d ./doc
+  /usr/bin/java -cp build com.geofffilippi.javaReference.JavaReference
+fi
